@@ -1,0 +1,31 @@
+footer {
+  position: absolute;
+  top: 742px;
+  right: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(6, 8, 31);
+  padding: 40px 45px 5px 30px;
+}
+
+footer p {
+  font-size: 25px;
+  color: rgb(229, 233, 234);
+}
+
+footer p span {
+  color: rgb(190, 237, 245);
+}
+
+footer a {
+  font-size: 28px;
+  margin-left: 20px;
+  color: rgb(190, 237, 245);
+  transition: 0.3s ease;
+}
+
+footer a:hover {
+  color: rgb(98, 147, 156);
+}

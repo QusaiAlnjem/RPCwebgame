@@ -1,0 +1,17 @@
+body {
+  margin: 0px;
+  padding: 60px 100px;
+  font-family: Roboto Mono;
+}
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0px;
+  background-image: url("images/0_pwDqZoXvHo79MoT7.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: brightness(0.3);
+  z-index: -1;
+}

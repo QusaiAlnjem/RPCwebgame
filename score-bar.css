@@ -1,0 +1,25 @@
+.Score-Bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 60px;
+  border-width: 3px;
+  border-style: groove;
+  border-color: rgb(78, 157, 157);
+  border-radius: 45px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.Score-Bar div {
+  font-size: 30px;
+  color: rgb(190, 237, 245);
+  margin: 15px 0px;
+}
+
+@media (max-width: 900px) {
+  .Score-Bar {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
