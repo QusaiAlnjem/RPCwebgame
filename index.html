@@ -1,69 +1,61 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>RPS-Game</title>
-
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="playing-buttons.css">
-    <link rel="stylesheet" href="score-bar.css">
     <link rel="stylesheet" href="computer-pick.css">
-    <link rel="stylesheet" href="footer.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-  </head>
+</head>
+<body>
+    <div class="background"></div>
 
-  <div class="background"></div>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
 
-  <body>
+    <main>
+        <div class="Score-Bar">
+            <div class="losses">Losses: <span class="l-count">0</span></div>
+            <div class="wins">Wins: <span class="w-count">0</span></div>
+            <div class="ties">Ties: <span class="t-count">0</span></div>
+        </div>
 
-    <div class="Score-Bar">
-      <div class="losses">Losses: <span class="l-count">0</span></div>
-      <div class="wins">Wins: <span class="w-count">0</span></div>
-      <div class="ties">Ties: <span class="t-count">0</span></div>
-    </div>
+        <div class="Playing-Buttons">
+            <button onclick="play('Rock')">
+                <img src="images/stone.png" alt="Rock">
+                <span>Rock</span>
+            </button>
+            <button onclick="play('Paper')">
+                <img src="images/paper.png" alt="Paper">
+                <span>Paper</span>
+            </button>
+            <button onclick="play('Scissor')">
+                <img src="images/scissors.png" alt="Scissor">
+                <span>Scissor</span>
+            </button>
+        </div>
 
-    <div class="Playing-Buttons">
+        <div class="computer-pick-section">
+            <p class="sentence">You Choose First!</p>
+        </div>
 
-      <button class="Rock" onclick="play('Rock');">
-        <img src="images/stone.png">
-        <span>Rock</span>
-      </button>
-  
-      <button class="Paper" onclick="play('Paper');">
-        <img src="images/paper.png">
-        <span>Paper</span>
-      </button>
-  
-      <button class="Scissor" onclick="play('Scissor');">
-        <img src="images/scissors.png">
-        <span>Scissor</span>
-      </button>
+        <p class="result"></p>
+    </main>
 
-    </div>
-
-
-    <div class="computer-pick-section">
-      <p class="sentence">You Choose First!</p>
-    </div>
-
-    <p class="result"></p>
-    
-    <script src="game.js"></script>
-    
     <footer>
-      <p>Copyright@<strong><span>QusaiDev</span></strong></p>
-      <div>
-        <a href="https://github.com/QusaiAlnjem"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.instagram.com/qusainjeim"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@q.us1"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://www.tiktok.com/@q.us1"><i class="fa-brands fa-tiktok"></i></a>
-      </div>
+        <p>Copyright © <span id="current-year"></span> <strong>Impostor|امبوستر</strong></p>
+        <div class="social-links">
+            <a href="https://github.com/QusaiAlnjem" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/qusainjeim" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@q.us1" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@q.us1" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+        </div>
     </footer>
-  </body>
+
+    <script src="game.js"></script>
+</body>
 </html>
